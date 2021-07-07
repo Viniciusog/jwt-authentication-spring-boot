@@ -9,16 +9,18 @@ Run the application in your IDE <br>
 
 #### /signup
 
+request
+
 ```json
 {
   "name": "John",
   "username": "userjohn",
   "email": "john@gmail.com",
-  "password": "password"
+  "password": "johnpassword"
 }
 ```
 
-result
+response
 
 ```json
 {
@@ -29,17 +31,28 @@ result
 
 #### /signin
 
+request
+
 ```json
 {
-  "accessToken": "43DXvhrwMGeLLlP4P4izjgsBB2yrpo82oiUPhADakLs",
+  "usernameOrEmail": "john@gmail.com",
+  "password": "johnpassword"
+}
+```
+
+response
+
+```json
+{
+  "accessToken": "eyJpc3MiOiJodHRwOi8vdHJ1c3R5YXBwLmNvbS8iLCJleHAiOjEzMDA4MTkzODAsInN1YiI6InVzZXJzLzg5ODM0NjIiLCJzY29wZSI6InNlbGYgYXBpL2J1eSJ9",
   "tokenType": "Bearer"
 }
 ```
 
-Header Authentication
+Header Authentication - for any request
 
 ```json
 {
-  "Authentication": "Bearer 43DXvhrwMGeLLlP4P4izjgsBB2yrpo82oiUPhADakLs"
+  "Authentication": "Bearer eyJpc3MiOiJodHRwOi8vdHJ1c3R5YXBwLmNvbS8iLCJleHAiOjEzMDA4MTkzODAsInN1YiI6InVzZXJzLzg5ODM0NjIiLCJzY29wZSI6InNlbGYgYXBpL2J1eSJ9"
 }
 ```
