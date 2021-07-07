@@ -2,8 +2,10 @@
 JWT authentication with spring boot
 
 #### How to run? 
-```git clone https://github.com/Viniciusog/jwt-authentication-spring-boot.git```
-Run the application in your IDE
+```git clone https://github.com/Viniciusog/jwt-authentication-spring-boot.git``` <br>
+Run the application in your IDE <br>
+
+```http://localhost:5000/```
 
 #### /signup
 
@@ -20,7 +22,7 @@ result
 
 ```json
 {
-  "success: true,
+  "success": true,
   "message": "User registered successfully"
 }
 ```
